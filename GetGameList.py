@@ -61,6 +61,7 @@ while have_more_results:
 
 # Check Duplicates
 unique_apps = list({appid: name for appid, name in all_apps}.items())
+# Sort by appid
 unique_apps.sort(key=lambda x: x[0])
 
 # Write csv file
