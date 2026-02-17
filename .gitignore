@@ -1,3 +1,5 @@
 .env
 __pycache__/
-*.pyc
+*.pyc*
+/data/
+/steam_game_list.csv
