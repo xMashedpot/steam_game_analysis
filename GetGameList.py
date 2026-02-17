@@ -6,7 +6,7 @@ import csv
 # Load private info
 load_dotenv()
 
-API_KEY = os.getenv("API_KEY")
+STEAM_API_KEY = os.getenv("STEAM_API_KEY")
 GAME_LIST_CSV_PATH = os.getenv("GAME_LIST_CSV_PATH")
 
 # create the address for api call depending on api_key and last app checked
@@ -49,7 +49,7 @@ last_appid = "0"
 all_apps = []
 
 while have_more_results:
-    address = make_address(API_KEY, last_appid)
+    address = make_address(STEAM_API_KEY, last_appid)
     data = fetch_apps(address)
     apps, have_more_results, last_appid = parse_response(data)
     rows = extract_app_rows(apps)
