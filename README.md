@@ -16,7 +16,7 @@ By combining multiple data sources and performing a structured ETL process, this
 
 ---
 
-## Data Collection
+## Step | Data Collection
 
 Data was collected for **~140,000 Steam apps**, with detailed information on player counts for **~26,000 games** from release to the present.  
 
@@ -141,21 +141,21 @@ The analysis revealed several interesting trends in Steam game player counts:
 1. **Average Players by Genre**  
    - Most genres show a tendency for player count to sharply decline after the first few months with `"Massively Multiplayer"` showing a stronger tendency than others.
    - `"Free To Play"` is the only genre to be able to recover player numbers to near launch levels.
-   - ![Average Players by Genre](./images/avg_players_genre.png)
+![Average Players by Genre](./images/avg_players_genre.png)
 
 2. **Average Players by Free vs Paid**  
    - Free games tend to have a **second growth phase** after their initial release.
    - Paid games often maintain roughly the same level after the first few months.
-   - ![Average Players by Free vs Paid](./images/avg_players_free_paid.png)
+![Average Players by Free vs Paid](./images/avg_players_free_paid.png)
 
 3. **Average Players by Price Range**  
    - Games with higher prices tend to lose players faster after release.
    - Higher priced games showed spikes in player count around the one, two, and three year mark.
-   - ![Average Players by Price Range](./images/avg_players_price.png)
+![Average Players by Price Range](./images/avg_players_price.png)
 
 4. **Positive Review Ratio vs Peak Player Count**  
    - Games with higher positive review ratios generally have higher peak player counts.  
    - Game with some of the highest peak player count tend to correlate less with positive review ratio.
-   - ![Positive Review Ratio vs Peak Player Count](./images/review_ratio_vs_peak.png)
+![Positive Review Ratio vs Peak Player Count](./images/review_ratio_vs_peak.png)
 
 These results highlight the influence of genre, pricing, and reviews on player engagement and retention over time.
