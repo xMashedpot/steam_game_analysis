@@ -137,7 +137,7 @@ SELECT * FROM staging.app_genres;
 INSERT INTO core.app_category
 SELECT * FROM staging.app_categories;
 
-INSERT INTO core.fact_player_metrics
+INSERT INTO core.player_metrics
 SELECT
     appid,
     TO_DATE(month, 'YYYY-MM'),
@@ -189,7 +189,7 @@ BEGIN
 END;
 $$;
 
-INSERT INTO core.dim_game
+INSERT INTO core.app_combined_details
 SELECT
     d.appid,
     d.name,
